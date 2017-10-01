@@ -19,6 +19,7 @@ console.log ('Player entered answer ' + firstQuestion + '.');
 
 // Evaluate player answer.
 
+
 if (firstQuestion === 'No' || firstQuestion === 'N') {
   alert ('Great Guess! ' + playerName + ' Riding the bus saves me from having to find parking in Seattle.');
   playerScore++ ;
@@ -32,38 +33,38 @@ alert ('Your score is ' + playerScore + ' ' + playerName + '.' );
 var secondQuestion = prompt ('Do I like to play baseball ' + playerName + '?' + ' Please answer either Yes or No').toUpperCase();
 console.log ('Player entered secondQuestion answer as ' + secondQuestion + '.');
 
-if (firstQuestion === 'No' || firstQuestion === 'N') {
-  alert ('Great Guess! ' + playerName + ' I haven\'t played baseball since Highschool.');
-  playerScore++ ;
-} else {
-  alert ('Sorry, wrong answer, ' + playerName + ' I haven\'t played baseball since Highshcool.');
-}
-Alert ('Your score is currently ' + playerScore + '.');
+  if (secondQuestion === 'No' || secondQuestion === 'N'); {
+    alert ('Great Guess! ' + playerName + 'I haven\'t played baseball since Highschool.');
+    playerScore++ ;
+  } else {
+    alert ('Sorry, wrong answer, ' + playerName + ' I haven\'t played baseball since Highshcool.');
+    }
+alert ('Your score is ' + playerScore + ' ' + playerName + '.' );
 
-var thirdQuestion = prompt ('Do I like to play the guitar, ' + playerName + '?' + 'Please answer either Yes or No').toUpperCase();
+var thirdQuestion = prompt 'Do I like to play the guitar, ' + playerName + '?' + 'Please answer either Yes or No').toUpperCase();
 console.log ('Player entered answer ' + secondQuestion + '.');
 
-if (firstQuestion = 'No' || 'N') {
-  alert ('Great Guess! ' + playerName + 'I unfortunately do not \(currently anyway\) know how to play any musical instrament.');
-  playerScore++
-} else {
-  alert ('Sorry, wrong answer, ' + playerName + ' I unfortunately do not \(currently anyway\) know how to play any musical instrament.');
-}
+if (thirdQuestion = 'No' || thirdQuestion 'N') {
+    alert ('Great Guess! ' + playerName + 'I unfortunately do not \(currently anyway\) know how to play any musical instrament.');
+    playerScore++
+    } else {
+    alert ('Sorry, wrong answer, ' + playerName + ' I unfortunately do not \(currently anyway\) know how to play any musical instrament.');
+    }
 
-var fourthQuestion = prompt ('Do I like to SCUBA dive, ' + playerName + '?' + ' Please answer either Yes or No').toUpperCase();
-console.log ('Player entered answer ' + secondQuestion + '.');
-if (fourthQuestion = 'Yes' || 'Y') {
-  alert ('Great Guess! ' + playerName + ' I haven\'t been diving in a long time but hope to do so again soon.');
-  playerScore++
-} else {
-  alert ('Sorry, wrong answer, ' + playerName + ' I actually love to go SCUBA diving, it has taken me all over the world.')
-}
+  var fourthQuestion = prompt ('Do I like to SCUBA dive, ' + playerName + '?' + 'Please answer either Yes or No').toUpperCase();
+        console.log ('Player entered answer ' + fourthQuestion + '.');
+          if (fourthQuestion = 'Yes' || 'Y') {
+            alert ('Great Guess! ' + playerName + 'I haven\'t been diving in a long time but hope to do so again soon.');
+      playerScore++
+            } else {
+            alert ('Sorry, wrong answer, ' + playerName + ' I actually love to go SCUBA diving, it has taken me all over the world.')
+            }
 
 var fifthQuestion = prompt ('Do I like to read mystery novels ' + playerName + '?' + 'Please answer either Yes or No').toUpperCase();
-console.log ('Player entered answer ' + fifthQuestion + '.');
-if (fithQuestion = 'No' || 'N') {
-  alert ('Great Guess! ' + playerName + ' I have read a few mystery novels, but I would much rather read Sci-fi.' );
-  playerScore++
-} else {
-  alert ('Sorry, wrong answer, ' + playerName + ' I have read a few mystery novels, but I would much rather read Sci-fi.');
-}
+    console.log ('Player entered answer ' +fifthQuestion + '.');
+      if (fithQuestion = 'No' || 'N') {
+          alert ('Great Guess! ' + playerName + ' I have read a few mystery novels, but I would much rather read Sci-fi.' );
+      playerScore++
+          } else {
+          alert ('Sorry, wrong answer, ' + playerName + ' I have read a few mystery novels, but I would much rather read Sci-fi.')
+                }
