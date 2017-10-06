@@ -72,6 +72,37 @@ if (fifthQuestion === 'NO' || fifthQuestion === 'N') {
   alert('Sorry, wrong answer, ' + playerName + '. I have read a few mystery novels, but I would much rather read Sci-fi.');
   alert('Your score is ' + playerScore + ' ' + playerName + '.');
 }
+
+var highValue = 200;
+var lowValue = 1;
+var userGuess = prompt ('Hello, ' + playerName + ' can you guess my number? Please enter a number between ' + lowValue + ' and ' + highValue + '.');
+var userNumberConverted = parseInt(userGuess);
+var guessCount = 0;
+
+while (userNumberConverted != 42) {
+  userNumberConverted = parseInt(userGuess);
+  console.log ('Player entered ' + userGuess + '.' );
+  guessCount++;
+  if (userNumberConverted < 42){
+    lowValue = userNumberConverted;
+    alert ('You\'re guess was incorrect. Please guess a higher number.');
+    userGuess = prompt ('Please guess again, ' + playerName + ' enter a number between ' + lowValue + ' and ' + highValue + '.' );
+    userNumberConverted = parseInt(userGuess);
+  }  else {
+    (userNumberConverted > 42)
+    highValue = userNumberConverted;
+    alert ('You\'re guess was incorrect. Please guess a lower number.');
+    userGuess = prompt ('Please guess again, enter a number between ' + lowValue + ' and ' + highValue + '.' );
+    userNumberConverted = parseInt(userGuess);
+  }
+}
+
+if (guessCount === 0 && userNumberConverted === 42) {
+  alert ('congratulations,' + playerName + ' you guessed the correct on the first try!');
+} else {
+  alert ('congratulations, ' + playerName + ' you guessed the correct number in ' + guessCount + '.');
+}
+
 //  Array question
 
 // States I have been SCUBA diving
