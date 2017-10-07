@@ -80,7 +80,7 @@ function fourthQuestion(){
     alert('Your score is ' + playerScore + ' ' + playerName + '.');
   }
 }
-fourthQuestio();
+fourthQuestion();
 // Ask the player thier fifth question.
 function fifthQuestion(){
   var fifthQuestion = prompt('Do I like to read mystery novels ' + playerName + '?' + ' Please answer either Yes or No.').toUpperCase();
