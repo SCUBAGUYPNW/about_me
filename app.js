@@ -82,7 +82,7 @@ if (fourthQuestion === 'YES' || fourthQuestion === 'Y') {
 }
 fourthQuestio();
 // Ask the player thier fifth question.
-
+function fifthQuestion(){
 var fifthQuestion = prompt('Do I like to read mystery novels ' + playerName + '?' + ' Please answer either Yes or No.').toUpperCase();
 console.log('Player entered answer ' + fifthQuestion + '.');
 
@@ -96,7 +96,8 @@ if (fifthQuestion === 'NO' || fifthQuestion === 'N') {
   alert('Sorry, wrong answer, ' + playerName + '. I have read a few mystery novels, but I would much rather read Sci-fi.');
   alert('Your score is ' + playerScore + ' ' + playerName + '.');
 }
-
+}
+fifthQuestion();
 // setup variables for number guess question.
 
 var highValue = 200;
