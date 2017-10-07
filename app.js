@@ -65,7 +65,7 @@ if (thirdQuestion === 'NO' || thirdQuestion === 'N') {
 }
 thirdQuestion();
 // Ask fourth question.
-
+function fourthQuestion(){
 var fourthQuestion = prompt('Do I like to SCUBA dive, ' + playerName + '?' + ' Please answer either Yes or No.').toUpperCase();
 console.log('Player entered answer ' + fourthQuestion + '.');
 
@@ -79,6 +79,8 @@ if (fourthQuestion === 'YES' || fourthQuestion === 'Y') {
   alert('Sorry, wrong answer, ' + playerName + '. I actually love to go SCUBA diving, it has taken me all over the world.');
   alert('Your score is ' + playerScore + ' ' + playerName + '.');
 }
+}
+fourthQuestio();
 // Ask the player thier fifth question.
 
 var fifthQuestion = prompt('Do I like to read mystery novels ' + playerName + '?' + ' Please answer either Yes or No.').toUpperCase();
