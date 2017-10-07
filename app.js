@@ -118,7 +118,7 @@ function sixthQuestion(){
       alert ('You\'re guess was incorrect. Please guess a higher number.');
       userGuess = prompt ('Please guess again, ' + playerName + ' enter a number between ' + lowValue + ' and ' + highValue + '.' );
       userNumberConverted = parseInt(userGuess);
-    }  else {
+    } else {
       highValue = userNumberConverted;
       alert ('You\'re guess was incorrect. Please guess a lower number.');
       userGuess = prompt ('Please guess again, enter a number between ' + lowValue + ' and ' + highValue + '.' );
