@@ -12,6 +12,7 @@ var playerName = prompt('Greatings player, please tell me your name.');
 console.log('Player entered their name as ' + playerName + '.');
 
 // Ask player their first question.
+function firstQuestion(){
 var firstQuestion = prompt('Did I drive to school today ' + playerName + '?' + ' Please answer either Yes or No.').toUpperCase();
 console.log('Player entered answer ' + firstQuestion + '.');
 
@@ -25,6 +26,8 @@ if (firstQuestion === 'NO' || firstQuestion === 'N') {
   alert('Sorry, ' + playerName + '. I actually take the train/bus to work every day, and then take the bus from work to here on school nights.');
   alert('Your score is ' + playerScore + ' ' + playerName + '.');
 }
+}
+firstQuestion();
 // Ask player their second question
 
 var secondQuestion = prompt('Do I like to play baseball ' + playerName + '?' + ' Please answer either Yes or No.').toUpperCase();
@@ -159,4 +162,3 @@ while (!enterLoop && guesses > 1) {
   }
 }
 alert ('Sorry ' + playerName + ' you did not guess a state I have been diving in. Please try again. You\'re final score is:' + playerScore + ' ' + playerName + '.');
-
