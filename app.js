@@ -48,7 +48,7 @@ if (secondQuestion === 'NO' || secondQuestion === 'N') {
 }
 secondQuestion();
 // ask the player thier third question
-
+function thirdQuestion(){
 var thirdQuestion = prompt('Do I like to play the guitar, ' + playerName + '?' + ' Please answer either Yes or No.').toUpperCase();
 console.log('Player entered answer ' + secondQuestion + '.');
 
@@ -62,6 +62,8 @@ if (thirdQuestion === 'NO' || thirdQuestion === 'N') {
   alert('Sorry, ' + playerName + ' I unfortunately do not \(currently anyway\) know how to play any musical instrament.');
   alert('Your score is ' + playerScore + ' ' + playerName + '.');
 }
+}
+thirdQuestion();
 // Ask fourth question.
 
 var fourthQuestion = prompt('Do I like to SCUBA dive, ' + playerName + '?' + ' Please answer either Yes or No.').toUpperCase();
