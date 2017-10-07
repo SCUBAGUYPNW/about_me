@@ -30,6 +30,8 @@ if (firstQuestion === 'NO' || firstQuestion === 'N') {
 firstQuestion();
 // Ask player their second question
 
+function secondQuestion(){
+
 var secondQuestion = prompt('Do I like to play baseball ' + playerName + '?' + ' Please answer either Yes or No.').toUpperCase();
 console.log('Player entered secondQuestion answer as ' + secondQuestion + '.');
 
@@ -43,6 +45,8 @@ if (secondQuestion === 'NO' || secondQuestion === 'N') {
   alert('Sorry ' + playerName + '. I haven\'t played baseball since Highschool.');
   alert('Your score is ' + playerScore + ' ' + playerName + '.');
 }
+}
+secondQuestion();
 // ask the player thier third question
 
 var thirdQuestion = prompt('Do I like to play the guitar, ' + playerName + '?' + ' Please answer either Yes or No.').toUpperCase();
