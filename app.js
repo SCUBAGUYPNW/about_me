@@ -28,7 +28,9 @@ if (firstQuestion === 'NO' || firstQuestion === 'N') {
 
 var secondQuestion = prompt('Do I like to play baseball ' + playerName + '?' + ' Please answer either Yes or No.').toUpperCase();
 console.log('Player entered secondQuestion answer as ' + secondQuestion + '.');
+
 // Evaluate the answer to the second question.
+
 if (secondQuestion === 'NO' || secondQuestion === 'N') {
   alert('Great guess ' + playerName + '. I haven\'t played baseball since Highschool.');
   playerScore++;
@@ -37,9 +39,13 @@ if (secondQuestion === 'NO' || secondQuestion === 'N') {
   alert('Sorry ' + playerName + '. I haven\'t played baseball since Highschool.');
   alert('Your score is ' + playerScore + ' ' + playerName + '.');
 }
+// ask the player thier third question
 
 var thirdQuestion = prompt('Do I like to play the guitar, ' + playerName + '?' + ' Please answer either Yes or No.').toUpperCase();
 console.log('Player entered answer ' + secondQuestion + '.');
+
+// Evaluate the player answer.
+
 if (thirdQuestion === 'NO' || thirdQuestion === 'N') {
   alert('Great guess ' + playerName + '. I \(currently anyway\) do not know how to play any musical instrament.');
   playerScore++;
@@ -52,6 +58,9 @@ if (thirdQuestion === 'NO' || thirdQuestion === 'N') {
 
 var fourthQuestion = prompt('Do I like to SCUBA dive, ' + playerName + '?' + ' Please answer either Yes or No.').toUpperCase();
 console.log('Player entered answer ' + fourthQuestion + '.');
+
+//  Evaluate their answer.
+
 if (fourthQuestion === 'YES' || fourthQuestion === 'Y') {
   playerScore++;
   alert('Great Guess ' + playerName + '! I love SCUBA diving. Unfortunately it has has been a long time since I have last been diving. I hope to do so again soon.');
@@ -60,9 +69,12 @@ if (fourthQuestion === 'YES' || fourthQuestion === 'Y') {
   alert('Sorry, wrong answer, ' + playerName + '. I actually love to go SCUBA diving, it has taken me all over the world.');
   alert('Your score is ' + playerScore + ' ' + playerName + '.');
 }
+// Ask the player thier fifth question.
 
 var fifthQuestion = prompt('Do I like to read mystery novels ' + playerName + '?' + ' Please answer either Yes or No.').toUpperCase();
 console.log('Player entered answer ' + fifthQuestion + '.');
+
+// evaluate their answer.
 
 if (fifthQuestion === 'NO' || fifthQuestion === 'N') {
   alert('Great guess ' + playerName + '! I have read a few mystery novels, but I would much rather read Sci-fi.');
@@ -73,11 +85,15 @@ if (fifthQuestion === 'NO' || fifthQuestion === 'N') {
   alert('Your score is ' + playerScore + ' ' + playerName + '.');
 }
 
+// setup variables for number guess question.
+
 var highValue = 200;
 var lowValue = 1;
 var userGuess = prompt ('Hello, ' + playerName + ' can you guess my number? Please enter a number between ' + lowValue + ' and ' + highValue + '.');
 var userNumberConverted = parseInt(userGuess);
 var guessCount = 0;
+
+// begin loop. Loop will continue until the user enters the correct number.
 
 while (userNumberConverted != 42) {
   userNumberConverted = parseInt(userGuess);
@@ -89,7 +105,6 @@ while (userNumberConverted != 42) {
     userGuess = prompt ('Please guess again, ' + playerName + ' enter a number between ' + lowValue + ' and ' + highValue + '.' );
     userNumberConverted = parseInt(userGuess);
   }  else {
-    (userNumberConverted > 42)
     highValue = userNumberConverted;
     alert ('You\'re guess was incorrect. Please guess a lower number.');
     userGuess = prompt ('Please guess again, enter a number between ' + lowValue + ' and ' + highValue + '.' );
@@ -98,9 +113,9 @@ while (userNumberConverted != 42) {
 }
 
 if (guessCount === 0 && userNumberConverted === 42) {
-  alert ('congratulations,' + playerName + ' you guessed the correct on the first try!');
+  alert ('congratulations,' + playerName + ' you guessed the correct number on the first try!');
 } else {
-  alert ('congratulations, ' + playerName + ' you guessed the correct number in ' + guessCount + '.');
+  alert ('congratulations, ' + playerName + ' you guessed the correct number in ' + guessCount + 'tries.');
 }
 
 //  Array question
@@ -124,7 +139,7 @@ while (!enterLoop && guesses > 1) {
   if (correctAnswer > -1){
     alert ('That is correct ' + playerName + '! ' + seventhQuestion + ', is a state I have been diving in.');
     playerScore++;
-    alert('Your score is ' + playerScore + ' ' + playerName + '.');
+    alert('Your  final score is ' + playerScore + ' ' + playerName + '.');
     enterLoop = true;
   } else {
     guesses--;
@@ -142,3 +157,4 @@ while (!enterLoop && guesses > 1) {
     correctAnswer = statesBeenDiving.indexOf(seventhQuestion);
   }
 }
+alert ('Sorry ' + playerName + ' you did not guess a state I have been diving in. Please try again. You\'re final score is:' + playerScore + ' ' + playerName + '.');
