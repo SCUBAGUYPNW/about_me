@@ -100,6 +100,7 @@ if (fifthQuestion === 'NO' || fifthQuestion === 'N') {
 fifthQuestion();
 // setup variables for number guess question.
 
+function sixthQuestion(){
 var highValue = 200;
 var lowValue = 1;
 var userGuess = prompt ('Hello, ' + playerName + ' can you guess my number? Please enter a number between ' + lowValue + ' and ' + highValue + '.');
@@ -130,7 +131,8 @@ if (guessCount === 0 && userNumberConverted === 42) {
 } else {
   alert ('congratulations, ' + playerName + ' you guessed the correct number in ' + guessCount + 'tries.');
 }
-
+}
+sixthQuestion();
 //  Array question
 
 // States I have been SCUBA diving
