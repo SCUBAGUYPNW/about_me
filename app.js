@@ -1,3 +1,4 @@
+
 // will be used to validate user input and accommodate user enter all-caps answers as well.
 // Include usefull and well written console.log() messages
 // correctly display to the brower console for each question of the guessing game.
@@ -158,3 +159,4 @@ while (!enterLoop && guesses > 1) {
   }
 }
 alert ('Sorry ' + playerName + ' you did not guess a state I have been diving in. Please try again. You\'re final score is:' + playerScore + ' ' + playerName + '.');
+
